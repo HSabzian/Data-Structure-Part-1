@@ -69,13 +69,13 @@ Memory usage is an important consideration when choosing between these data stru
 
 - **Memory Waste**: If the array is only partially filled, unused space is wasted. For example, an array of size 100 that only holds 10 elements will waste memory for the other 90 slots.
 
----
+
 
 ### 2. **List (Interface)**:
 
 - `List` is just an interface in Java, so it doesn’t define memory usage by itself. The memory footprint depends on the implementation, such as `ArrayList` or `LinkedList`. The interface itself doesn’t store data or require memory beyond what's needed for the methods that define the contract for implementing classes.
 
----
+
 
 ### 3. **ArrayList**:
 
@@ -91,7 +91,7 @@ Memory usage is an important consideration when choosing between these data stru
   - More flexible than a regular array but can be less memory efficient due to its resizing strategy.
   - **Wasted Memory**: Unused capacity is common in `ArrayList`. For example, if the current capacity is 50 but only 30 elements are stored, memory for 20 unused slots is wasted.
   
----
+
 
 ### 4. **LinkedList**:
 
@@ -111,7 +111,7 @@ Memory usage is an important consideration when choosing between these data stru
   - **High Overhead**: `LinkedList` uses more memory than `ArrayList` because of the storage for the next and previous pointers. The memory overhead is `O(n)` where `n` is the number of elements, but with a significant constant factor due to the extra pointers.
   - **No Waste from Capacity**: Unlike `ArrayList`, `LinkedList` doesn't waste memory due to capacity. It only uses as much memory as needed for the actual elements plus pointers.
   
----
+
 
 ### **Memory Usage Comparison**:
 
@@ -127,7 +127,7 @@ Memory usage is an important consideration when choosing between these data stru
    - **Pros**: Ideal for frequent insertions and deletions, as it doesn’t need to resize or shift elements.
    - **Cons**: Requires significantly more memory than `Array` or `ArrayList` because of the additional references for each node, leading to higher memory overhead, especially for large lists.
 
----
+
 
 ### **Key Differences in Memory Usage**:
 
