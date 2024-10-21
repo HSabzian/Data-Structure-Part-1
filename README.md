@@ -1,5 +1,6 @@
+---
 ### A: General structure of `Array`, `List`, `ArrayList`, and `LinkedList` in Java
-
+---
 ### 1. **Array:**
 An `Array` is a basic data structure that stores a fixed-size, ordered collection of elements of the same data type. Once an array is created, its size cannot change. Each element in the array is accessed by its index, which starts from zero.
 
@@ -46,6 +47,8 @@ An `Array` is a basic data structure that stores a fixed-size, ordered collectio
   - **LinkedList**: When frequent insertions and deletions are needed, but random access is not a priority.
 
 Each structure has its advantages and drawbacks, depending on the operations you need to perform frequently (access, insert, delete, etc.).
+
+---
 
 ### B: Memory Usage of `Array`, `List`, `ArrayList`, and `LinkedList` in Java:
 
